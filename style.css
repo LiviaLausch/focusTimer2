@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --text-color: #323238;
+  --text-color-secundary: #FFFFFF;
+  --bg-button-sound: #E1E1E6;
+  --bg-button-sound-secundary: #02799D;
+  --border-secundary: #02799D;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+#page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  gap: 20rem;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 4.4rem;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12.6rem;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+
+#controls {
+  display: flex;
+  justify-content: center ;
+  gap: 4rem;
+}
+
+.sounds {
+  display: grid;
+  grid-template-areas: 
+  "A B"
+  "C D";
+  gap: 3.2rem;
+}
+
+.sounds button {
+  padding: 4rem;
+  background-color: var(--bg-button-sound);
+  border-radius: 2.4rem;
+  transition: 1s;
+}
+
+.sounds button:hover{
+  background-color: var(--bg-button-sound-secundary);
+  color: var(--text-color-secundary);
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle,
+  html:not(.running) .ph-stop-circle{
+  display: none;
+}
+
+button.selected {
+  background-color: var(--border-secundary);
+  color: white;
+}

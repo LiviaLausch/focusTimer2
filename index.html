@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="./src/main.js" defer></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <div id="page">
+    <div class="timer">
+
+      <div class="time">
+        <div id="minutes">00</div>
+        <span>:</span>
+        <div id="seconds">00</div>
+      </div>
+
+      <div id="controls">
+        <button 
+        data-action="toggleRunning"
+        class="ph ph-play-circle">
+        </button>
+        <button 
+        data-action="toggleRunning"
+        class="ph ph-pause-circle">
+        </button>
+        <button 
+        data-action="more5"
+        class="ph ph-plus-circle">
+        </button>
+        <button
+          data-action="less5"
+          class="ph ph-minus-circle">
+        </button>
+      </div>
+    </div>
+
+    <div class="sounds">
+      <button
+        id="tree"
+        class="ph-bold ph-tree">
+      </button>
+      <button
+        id="rain"
+        class="ph-bold ph-cloud-rain">
+      </button>
+      <button
+        id="coffeeshop"
+        class="ph-bold ph-storefront">
+      </button>
+      <button
+        id="fire"
+        class="ph-bold ph-campfire">
+      </button>
+    </div>
+  </div>
+</body>
+</html>
